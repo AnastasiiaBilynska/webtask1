@@ -1,0 +1,79 @@
+.header_text {
+	background-image: url(/images/Photo_3.jpg);
+}
+
+@media (max-width: 552px) {
+	.header_text {
+		margin-top: 0;
+	}
+}
+
+svg {
+	height: 5em;
+	color: black;
+}
+
+.about {
+	display: block;
+	margin: 0 auto;
+	align-items: center;
+	border-radius: 50px;
+	padding: 2em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.about h2 {
+	font-size: 40px;
+	font-family: "Hind", sans-serif;
+	font-style: italic;
+	font-weight: 800;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.about p {
+	font-size: x-large;
+	text-align: center;
+	margin: 1em;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 1em;
+	text-align: center;
+}
+
+th {
+	font-size: x-large;
+	background-color: rgb(187, 228, 118);
+	padding: 1em 1.5em;
+}
+
+table {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 60vw;
+}
+
+@keyframes pulsates {
+	90% {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 -1px rgba(0, 0, 0, 0), 0 0 5px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0);
+	}
+}
+
+.blink_contact {
+	color: rgb(255, 255, 255);
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+	animation: pulsates 3s linear infinite;
+}
+
+.blink_contact :hover {
+	color: rgb(187, 228, 118);
+}
+
+iframe {
+	width: 100%;
+}

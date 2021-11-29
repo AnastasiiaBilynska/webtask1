@@ -1,4 +1,4 @@
-function myFunction() {
+function readMore() {
   const dots = document.getElementById("dots");
   const moreText = document.getElementById("more");
   const btnText = document.getElementById("myBtn");

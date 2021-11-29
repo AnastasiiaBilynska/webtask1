@@ -308,3 +308,20 @@ footer {
 footer p {
 	margin-top: 1em;
 }
+
+.active {
+	color: rgb(245, 245, 245);
+	text-shadow: 0 -1px rgba(0, 0, 0, .1);
+	animation: pulsate 1.2s linear infinite;
+}
+
+.logo {
+	padding-left: 1.8em;
+	animation: horseMove 5s infinite;
+}
+
+@keyframes horseMove {
+	50% {
+		padding-right: 50px;
+	}
+}
