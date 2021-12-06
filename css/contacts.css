@@ -23,7 +23,7 @@ svg {
 }
 
 .about h2 {
-	font-size: 40px;
+	font-size: calc(2rem + 6 * (100vw - 320px) / 880);
 	font-family: "Hind", sans-serif;
 	font-style: italic;
 	font-weight: 800;
@@ -32,7 +32,7 @@ svg {
 }
 
 .about p {
-	font-size: x-large;
+	font-size: calc(1rem + 6 * (100vw - 320px) / 880);
 	text-align: center;
 	margin: 1em;
 }
@@ -47,14 +47,14 @@ td {
 }
 
 th {
-	font-size: x-large;
+	font-size: calc(1rem + 6 * (100vw - 320px) / 880);
 	background-color: rgb(187, 228, 118);
 	padding: 1em 1.5em;
 }
 
 table {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	width: 60vw;
+	width: 100%;
 }
 
 @keyframes pulsates {
@@ -76,4 +76,10 @@ table {
 
 iframe {
 	width: 100%;
+}
+
+@media (max-width: 900px) {
+	svg {
+		height: calc(3rem + 6 * (100vw - 320px) / 880);
+	}
 }

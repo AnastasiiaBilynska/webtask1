@@ -5,6 +5,7 @@
 
 p {
 	font-family: "Source Sans Pro", sans-serif;
+	font-size: calc(1rem + 6 * (100vw - 320px) / 880);
 }
 
 body {
@@ -14,10 +15,11 @@ body {
 	scroll-behavior: smooth;
 }
 
-.container_menu {
+.navbar {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	padding-top: 0;
 }
 
 .header_menu {
@@ -103,11 +105,6 @@ body {
 }
 
 @media (max-width: 551px) {
-	p,
-	h3,
-	h2 {
-		font-size: 12px;
-	}
 	.header_text {
 		margin-top: 1em;
 		background-size: cover;
@@ -178,7 +175,20 @@ body {
 	visibility: hidden;
 	opacity: 0;
 	transform: translate(-50%, 20px);
-	transition: .3s;
+	transition: .5s;
+}
+
+@media (max-width: 800px) {
+	.submenu {
+		width: 180px;
+	}
+}
+
+@media (max-width: 600px) {
+	.submenu {
+		width: 180px;
+		margin-left: 15%;
+	}
 }
 
 .topmenu>li:hover .submenu {
@@ -213,7 +223,7 @@ main {
 }
 
 .history h2 {
-	font-size: 40px;
+	font-size: calc(2rem + 6 * (100vw - 320px) / 880);
 	font-family: "Hind", sans-serif;
 	font-style: italic;
 	font-weight: 800;
@@ -222,7 +232,6 @@ main {
 }
 
 .history p {
-	font-size: x-large;
 	text-indent: 2em;
 	text-align: justify;
 	margin: 2em;
@@ -251,7 +260,7 @@ button {
 }
 
 .win h2 {
-	font-size: 40px;
+	font-size: calc(2rem + 6 * (100vw - 320px) / 880);
 	font-family: "Hind", sans-serif;
 	font-style: italic;
 	font-weight: 800;
@@ -260,7 +269,7 @@ button {
 }
 
 .win h3 {
-	font-size: 30px;
+	font-size: calc(1.5rem + 6 * (100vw - 320px) / 880);
 	font-family: "Hind", sans-serif;
 	font-style: italic;
 	font-weight: 800;
@@ -269,7 +278,6 @@ button {
 }
 
 .win p {
-	font-size: 20px;
 	font-family: "Hind", sans-serif;
 	font-style: italic;
 	font-weight: 800;
@@ -307,6 +315,7 @@ footer {
 
 footer p {
 	margin-top: 1em;
+	font-size: calc(1.3rem + 6 * (100vw - 320px) / 880);
 }
 
 .active {
@@ -323,5 +332,28 @@ footer p {
 @keyframes horseMove {
 	50% {
 		padding-right: 50px;
+	}
+}
+
+.navbar-toggler {
+	margin-left: 90%;
+	border: none;
+}
+
+@media (min-width: 600px) {
+	.navbar-toggler {
+		margin-left: 92%;
+	}
+}
+
+@media (max-width: 990px) {
+	.logo {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	@keyframes horseMove {
+		50% {
+			padding-left: 80px;
+		}
 	}
 }
