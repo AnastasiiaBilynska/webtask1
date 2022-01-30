@@ -1,0 +1,22 @@
+{
+  "name": "webtask1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiiaBilynska/webtask1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiiaBilynska/webtask1/issues"
+  },
+  "homepage": "https://github.com/AnastasiiaBilynska/webtask1#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
