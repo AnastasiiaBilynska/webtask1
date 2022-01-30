@@ -1,0 +1,100 @@
+.header_text {
+	background-image: url(/images/Photo_7.jpg);
+}
+
+.news {
+	display: block;
+	margin: 0 auto;
+	align-items: center;
+	border-radius: 50px;
+	padding: 2em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.img_group {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.img_container {
+	display: block;
+}
+
+#output {
+	width: 100%;
+}
+
+.form-download {
+	margin: auto 0;
+}
+
+.btn-primary {
+	color: rgb(255, 255, 255);
+	background-color: rgb(187, 228, 118);
+	font-size: large;
+	width: 50%;
+	margin: 0 auto;
+	border: rgb(187, 228, 118);
+	text-shadow: 0 -1px rgba(245, 245, 245, 0.1);
+	animation: pulsate 1.2s linear infinite;
+}
+
+.btn-primary:hover, .disabled {
+	background-color: rgb(127, 177, 42);
+}
+
+.btn[disabled] {
+	background-color: rgb(127, 177, 42);
+}
+
+.form-download {
+	align-self: center;
+	justify-self: center;
+}
+
+@media (max-width: 710px) {
+	.img_group {
+		grid-template-columns: 1fr;
+	}
+	.form-download {
+		align-self: center;
+		justify-self: left;
+	}
+}
+
+.alert-danger {
+	font-size: 14px;
+}
+
+h2 {
+	font-size: calc(2rem + 6 * (100vw - 320px) / 880);
+	font-family: "Hind", sans-serif;
+	font-style: italic;
+	font-weight: 800;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.alert-success {
+	font-size: 14px;
+}
+
+.hidden {
+	display: none;
+}
+
+#alertDiv {
+	font-size: calc(1.5rem + 6 * (100vw - 320px) / 880);
+	margin-top: 1em;
+	text-align: center;
+	height: 2em;
+}
+
+.error {
+	border-color: red;
+}
